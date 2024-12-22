@@ -1,6 +1,6 @@
 region_name = "ap-northeast-2"
-environment = "dev"
-allow_ip    = ["39.117.40.3", "182.228.179.171"]
+environment = "test"
+allow_ip    = []
 prefix      = "my-lgtm-test"
 
 vpc = {
@@ -22,7 +22,7 @@ rds = {
   engine_version              = "10.6"
   instance_class              = "db.t3.medium"
   admin_username              = "admin"
-  admin_password              = "passw0rd1!"
+  admin_password              = "passw0rd1!"  # TODO: Change this to a secure password
   manage_master_user_password = false
   publicly_accessible         = true
   create_db_subnet_group      = true
